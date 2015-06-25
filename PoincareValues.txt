@@ -1,0 +1,35 @@
+Poincare 1: (a lot of 2 period)
+
+
+% Set model parameters:
+Sim.Mod = Sim.Mod.Set('m1',0.1,'m2',0.5,'spr_k',500,'damping',1);
+
+%Set controller parametrs:
+Sim.Con = Sim.Con.Set('dx',0.02);
+
+Poincare 2: (mostly not stable)
+
+% Set model parameters:
+Sim.Mod = Sim.Mod.Set('m1',0.2,'m2',0.6,'spr_k',500,'damping',0.1);
+
+%Set controller parametrs:
+Sim.Con = Sim.Con.Set('dx',0.03);
+
+Poincare 3 (2 parts - mostly not stable):
+
+% Set model parameters:
+Sim.Mod = Sim.Mod.Set('m1',0.2,'m2',0.6,'spr_k',500,'damping',0.5);
+
+%Set controller parametrs:
+Sim.Con = Sim.Con.Set('dx',0.05);
+
+Poincare 4 (Good!):
+
+% Set model parameters:
+Sim.Mod = Sim.Mod.Set('m1',0.1,'m2',0.5,'spr_k',500,'damping',1);
+
+%Set controller parametrs:
+Sim.Con = Sim.Con.Set('dx',0.02);
+
+
+
